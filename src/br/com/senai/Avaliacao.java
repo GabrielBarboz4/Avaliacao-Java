@@ -128,7 +128,7 @@ public class Avaliacao {
                 System.out.println("Limite disponível crédito: R$" + loanLimit);
 
                 boolean aprovedLoan = true;
-                if (desiredLoan > loanLimit || loanLimit > currentBalence) aprovedLoan = false;
+                if (desiredLoan > loanLimit || loanLimit > currentBalence) aprovedLoan = false; // Sei que esse if poderia ser simplificado, mas a questão exigia que fosse feita essa lógica pelo if else
 
                 isAproved = (aprovedLoan) ? "aprovado" : "negado";
                 balanceDegree = (aprovedLoan) ? "superior" : "inferior";
